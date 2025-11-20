@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a65b1ca-5569-4ef3-94c5-794a062aaeaa" name="변경" comment="commit_1">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="6a65b1ca-5569-4ef3-94c5-794a062aaeaa" name="변경" comment="commit_model_Species">
+      <change beforePath="$PROJECT_DIR$/api/endpoints/species.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/endpoints/species.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cruds/species_crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/cruds/species_crud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/species_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/species_schema.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +108,7 @@
       <workItem from="1763427772791" duration="15760000" />
       <workItem from="1763465644496" duration="6223000" />
       <workItem from="1763556324353" duration="8000" />
-      <workItem from="1763595878807" duration="4224000" />
+      <workItem from="1763595878807" duration="4919000" />
     </task>
     <task id="LOCAL-00001" summary="commit_1">
       <option name="closed" value="true" />
@@ -120,7 +118,23 @@
       <option name="project" value="LOCAL" />
       <updated>1763597071073</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit_2">
+      <option name="closed" value="true" />
+      <created>1763609513680</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763609513680</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit_model_Species">
+      <option name="closed" value="true" />
+      <created>1763609721295</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763609721295</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +142,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit_1" />
+    <MESSAGE value="commit_2" />
+    <MESSAGE value="commit_model_Species" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit_model_Species" />
   </component>
 </project>
