@@ -21,7 +21,11 @@ engine = create_async_engine(
     DATABASE_URL,
     echo=False,
     pool_size=10,
-    max_overflow=20
+    max_overflow=20,
+    connect_args={
+        "ssl": "disable",
+        "timeout": 10
+    }  # SSL 검증 비활성화
 )
 
 # 비동기 세션 생성기

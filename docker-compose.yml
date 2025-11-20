@@ -16,3 +16,21 @@ services:
     # 🚨 호스트 머신 접근을 위한 extra_hosts 설정
     extra_hosts:
       - "host.docker.internal:host-gateway"
+  # 2. PostgreSQL 데이터베이스 서비스
+  db:
+    image: postgres:16-alpine # 가볍고 안정적인 최신 PostgreSQL 이미지 사용
+    container_name: verde-postgres-db
+    restart: always
+    # .env 파일의 환경 변수를 DB 설정에 사용
+    env_file:
+      - .env
+    # 데이터를 영구 저장할 볼륨 설정 (컨테이너가 삭제되어도 데이터는 유지)
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    # 5432 포트를 호스트에 노출 (선택 사항: 호스트에서 DB 툴로 접근할 때 필요)
+    ports:
+      - "5432:5432"
+
+# 볼륨 정의
+volumes:
+  postgres_data:
