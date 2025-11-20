@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  # FastAPI 애플리케이션 서비스 (호스트 DB에 연결)
+  web:
+    build: .
+    container_name: verde-fastapi
+    restart: always
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    # 🚨 호스트 머신 접근을 위한 extra_hosts 설정
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
